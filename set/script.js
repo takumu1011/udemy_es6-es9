@@ -1,0 +1,21 @@
+// let arr = [1, 2, 3];
+// let arr = new Array(1, 2, 3);
+let set1 = new Set([1, 2, 3]);
+set1.add(10);
+set1.delete(2);
+console.log(set1.has(3));
+console.log(set1);
+console.log(set1.keys());
+console.log(set1.values());
+console.log(set1.entries());
+let set2 = new Set('あいうえお');
+console.log(set2);
+let [a, , b, , c] = set2;
+console.log(a, b, c);
+console.log(set2.size);
+
+let ws = new WeakSet([{}]);
+let one = { name: '太郎' };
+ws.add(one);
+console.log(ws.has(one));
+console.log(ws);
